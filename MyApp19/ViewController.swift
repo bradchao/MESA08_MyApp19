@@ -60,14 +60,24 @@ class ViewController: UIViewController {
             }
             
             // 替換掉 ?
-            sqlite3_bind_text(statement, 1, cname, -1, nil)
-            sqlite3_bind_text(statement, 2, birthday, -1, nil)
-            sqlite3_bind_text(statement, 3, tel, -1, nil)
+            if sqlite3_bind_text(statement, 1, cname, -1, nil) != SQLITE_OK {
+                let errmesg = String(cString: sqlite3_errmsg(app.db), encoding: .utf8)
+                print("bind cname error:\(errmesg)")
+            }
+            if sqlite3_bind_text(statement, 2, birthday, -1, nil) != SQLITE_OK {
+                let errmesg = String(cString: sqlite3_errmsg(app.db), encoding: .utf8)
+                print("bind birthday error:\(errmesg)")
+            }
+            if sqlite3_bind_text(statement, 3, tel, -1, nil) != SQLITE_OK {
+                let errmesg = String(cString: sqlite3_errmsg(app.db), encoding: .utf8)
+                print("bind tel error:\(errmesg)")
+            }
             
             if sqlite3_step(statement) == SQLITE_DONE {
                 print("insert ok")
             }else{
-                print("insert error")
+                let errmesg = String(cString: sqlite3_errmsg(app.db), encoding: .utf8)
+                print("insert error:\(errmesg)")
             }
         
         }

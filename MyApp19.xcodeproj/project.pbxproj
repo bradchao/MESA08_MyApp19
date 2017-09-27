@@ -13,7 +13,7 @@
 		370FE3351F7B336F00AEA0AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370FE3341F7B336F00AEA0AF /* Assets.xcassets */; };
 		370FE3381F7B336F00AEA0AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370FE3361F7B336F00AEA0AF /* LaunchScreen.storyboard */; };
 		370FE3431F7B3C3400AEA0AF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 370FE3421F7B3C3400AEA0AF /* libsqlite3.tbd */; };
-		370FE3441F7B3CE300AEA0AF /* mydb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 370FE33F1F7B391300AEA0AF /* mydb.jpg */; };
+		370FE3461F7B54D900AEA0AF /* mydbv2.db in Resources */ = {isa = PBXBuildFile; fileRef = 370FE3451F7B54A800AEA0AF /* mydbv2.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +24,9 @@
 		370FE3341F7B336F00AEA0AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		370FE3371F7B336F00AEA0AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		370FE3391F7B336F00AEA0AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		370FE33F1F7B391300AEA0AF /* mydb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mydb.jpg; sourceTree = "<group>"; };
 		370FE3401F7B39F700AEA0AF /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		370FE3421F7B3C3400AEA0AF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		370FE3451F7B54A800AEA0AF /* mydbv2.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = mydbv2.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		370FE32C1F7B336F00AEA0AF /* MyApp19 */ = {
 			isa = PBXGroup;
 			children = (
-				370FE33F1F7B391300AEA0AF /* mydb.jpg */,
+				370FE3451F7B54A800AEA0AF /* mydbv2.db */,
 				370FE32D1F7B336F00AEA0AF /* AppDelegate.swift */,
 				370FE32F1F7B336F00AEA0AF /* ViewController.swift */,
 				370FE3311F7B336F00AEA0AF /* Main.storyboard */,
@@ -140,7 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				370FE3441F7B3CE300AEA0AF /* mydb.jpg in Resources */,
+				370FE3461F7B54D900AEA0AF /* mydbv2.db in Resources */,
 				370FE3381F7B336F00AEA0AF /* LaunchScreen.storyboard in Resources */,
 				370FE3351F7B336F00AEA0AF /* Assets.xcassets in Resources */,
 				370FE3331F7B336F00AEA0AF /* Main.storyboard in Resources */,

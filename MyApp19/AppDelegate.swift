@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let fmgr = FileManager.default
-        let srcDB = Bundle.main.path(forResource: "mydb", ofType: "jpg")
-        let tagDB = NSHomeDirectory() + "/Documents/mydb.jpg"
+        let srcDB = Bundle.main.path(forResource: "mydbv2", ofType: "db")
+        let tagDB = NSHomeDirectory() + "/Documents/mydbv2.db"
         
         if !fmgr.fileExists(atPath: tagDB) {
             try! fmgr.copyItem(atPath: srcDB!, toPath: tagDB)
